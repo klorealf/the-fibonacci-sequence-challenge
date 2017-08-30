@@ -38,5 +38,23 @@ describe 'iterative_nth_fibonacci_number' do
 end
 
 describe 'recursive_nth_fibonacci_number' do
-  # This looks like a great place to write some tests, huh?
+  it 'calculates the 0th fibonacci number' do
+    calculated_number = recursive_nth_fibonacci_number(0)
+    expect(calculated_number).to eq 0
+  end
+
+  it 'calculates the 1st fibonacci number' do
+    calculated_number = recursive_nth_fibonacci_number(1)
+    expect(calculated_number).to eq 1
+  end
+
+  it 'calculates the 2nd fibonacci number' do
+    calculated_number = recursive_nth_fibonacci_number(2)
+    expect(calculated_number).to eq 1
+  end
+
+  it 'calculates the 5th fibonacci number' do
+    calculated_number = recursive_nth_fibonacci_number(5)
+    expect(calculated_number).to eq 5
+  end
 end
