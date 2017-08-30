@@ -38,5 +38,7 @@ describe 'iterative_nth_fibonacci_number' do
 end
 
 describe 'recursive_nth_fibonacci_number' do
-  # This looks like a great place to write some tests, huh?
+
+  it 'calculates the 15th fib number' do
+    expect(recursive_nth_fibonacci_number(15)).to eq 610
 end
