@@ -11,8 +11,10 @@ def iterative_nth_fibonacci_number(n)
 end
 
 def recursive_nth_fibonacci_number(n)
-  if n == 0
-    return
+  if n <= 1
+    n
+  else
+    return recursive_nth_fibonacci_number(n - 1) + recursive_nth_fibonacci_number(n - 2)
+  end
 end
 
-#p iterative_nth_fibonacci_number(4)

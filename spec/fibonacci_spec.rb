@@ -39,6 +39,19 @@ end
 
 describe 'recursive_nth_fibonacci_number' do
 
-  it 'calculates the 15th fib number' do
+  it 'calculates the 0th fibonacci number' do
+    expect(recursive_nth_fibonacci_number(0)).to eq 0
+  end
+
+  it 'calculates the 1st fibonacci number' do
+    expect(recursive_nth_fibonacci_number(1)).to eq 1
+  end
+
+  it 'calculates the 2nd fibonacci number' do
+    expect(recursive_nth_fibonacci_number(2)).to eq 1
+  end
+
+  it 'calculates the 15th fibonacci number' do
     expect(recursive_nth_fibonacci_number(15)).to eq 610
+  end
 end
